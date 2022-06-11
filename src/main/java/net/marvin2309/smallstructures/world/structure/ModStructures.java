@@ -27,6 +27,9 @@ public class ModStructures {
     public static final RegistryObject<StructureFeature<?>> SKY_STRUCTURES =
             DEFERRED_REGISTRY_STRUCTURE.register("sky_structures", SkyStructures::new);
 
+    public static final RegistryObject<StructureFeature<?>> FALLEN_TREE_STRUCTURE =
+            DEFERRED_REGISTRY_STRUCTURE.register("fallen_tree_structure", FallenTreeStructures::new);
+
     public static void register (IEventBus eventBus) {
         DEFERRED_REGISTRY_STRUCTURE.register(eventBus);
     }
